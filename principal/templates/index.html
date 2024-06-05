@@ -1,0 +1,16 @@
+{% extends "plantillaBase.html" %}
+
+{% block body %}
+
+{% if user.is_authenticated %}
+
+    <h1> Bienvenido {{usuario.username}} </h1>
+
+{% else %}
+    <h1> Bienvenido </h1>
+{% endif %}
+
+<p>Estoy en la vista index </p>
+
+
+{% endblock  %}
